@@ -25,12 +25,12 @@
         <div class="hero-nav">
           <div class="container">
             <ul class="nav-inline">
-              <li><a href="#">a&amps</a></li>
-              <li><a href="#">itinerary</a></li>
-              <li><a href="#">lodging</a></li>
-              <li><a href="#">travel</a></li>
-              <li><a href="#">registry</a></li>
-              <li><a href="#">contact</a></li>
+              <a href="#"><li>a&amps</li></a>
+              <a href="#"><li>itinerary</li></a>
+              <a href="#"><li>lodging</li></a>
+              <a href="#"><li>travel</li></a>
+              <a href="#"><li>registry</li></a>
+              <a href="#"><li>contact</li></a>
             </ul>
           </div>
         </div>
@@ -44,6 +44,45 @@
         </div>
       </div>
       
+      <div class="content itinerary">
+        <div class="container">
+
+        {% include itinerary.html %}
+
+        </div>
+      </div>
+
+      <div class="content lodging">
+        <div class="container">
+
+        {% include lodging.html %}
+
+        </div>
+      </div>
+
+      <div class="content travel">
+        <div class="container">
+
+        {% include travel.html %}
+
+        </div>
+      </div>
+
+      <div class="content registry">
+        <div class="container">
+
+        {% include registry.html %}
+
+        </div>
+      </div>
+
+      <div class="content contact">
+        <div class="container">
+
+        {% include contact.html %}
+
+        </div>
+      </div>
 
     </body>
 </html>
