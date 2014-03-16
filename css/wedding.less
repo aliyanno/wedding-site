@@ -2,6 +2,7 @@
 @accentGreen:		#6BCD9C;
 @background: 		#f7f7f7;
 @borderGrey:		#8c8c8c;
+@textColor: 		#272724;
 
 @fontSize:			15px;
 
@@ -20,6 +21,11 @@ body {
 	h4 {font-size: @fontSize*2.0};
 	h5 {font-size: @fontSize*1.6};
 	h6 {font-size: @fontSize*1.2};
+
+	a, a:hover, a:active, a:visited {
+		color: @textColor;
+		text-decoration: none;
+	}
 }
 .container {
 	width: 960px;
@@ -40,13 +46,26 @@ body {
 		}
 	}
 	.hero-nav {
+		width: 100%;	
+		background: #EAE9E8;
 		position: relative;
-		height: 50px;
+		border-bottom: 1px solid lighten(@borderGrey, 25%);
 		li {
-			display: inline;
+			display: inline-block;
 			width: 100%/7;
+			text-align: center;
+			padding: 16px 9px;
+			&:hover {
+				background: @accentGreen;
+			}
 		}
 	}
 }
-
+.content {
+	background: darken(@background, 2%);
+	.container {
+		padding: 75px;
+		padding-left: 60px;
+	}
+}
 
